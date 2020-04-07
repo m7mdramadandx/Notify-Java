@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/primary"
+        android:visibility="visible" />
+
+    <com.simplemobiletools.commons.views.MyRecyclerView
+        android:id="@+id/writtenNoteRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="90dp"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal"
+        android:padding="10dp" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="6dp"
+        fab:fab_addButtonColorNormal="@color/firstColor"
+        fab:fab_addButtonColorPressed="@color/black"
+        fab:fab_addButtonPlusIconColor="@color/primary"
+        fab:fab_addButtonStrokeVisible="true">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/newWrittenNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/thirdColor"
+            fab:fab_colorPressed="@color/black"
+            fab:fab_icon="@drawable/new_note"
+            fab:fab_stroke_visible="true"
+            fab:fab_title="new note"
+            fab:useCompatPadding="true" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="logout"
+            fab:fab_colorNormal="@color/firstColor"
+            fab:fab_colorPressed="@color/black"
+            fab:fab_icon="@drawable/logout" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

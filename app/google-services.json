@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1081634691693",
+    "firebase_url": "https://remember-8cc56.firebaseio.com",
+    "project_id": "remember-8cc56",
+    "storage_bucket": "remember-8cc56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081634691693:android:1e87ee5421f79018bdbd64",
+        "android_client_info": {
+          "package_name": "com.ramadan.remember"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081634691693-q27me40vna900sddp0e7l4v2o08lr0nh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0FDvkvmJQF-Fsv9Z4413mHKD0OtfM82k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081634691693-q27me40vna900sddp0e7l4v2o08lr0nh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

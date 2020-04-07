@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:translationZ="5dp"
+    card_view:cardCornerRadius="14dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/firstColor"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/writtenNoteName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/cagliostro"
+            android:text="Note name"
+            android:textColor="@color/lightGrey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/writtenNoteData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/cagliostro"
+            android:text="Note content"
+            android:textColor="@color/lightGrey"
+            android:textDirection="inherit" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/writtenNoteDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/cagliostro"
+        android:text="dd/MM/yyyy"
+        android:textColor="@color/lightGrey"
+        android:textSize="9sp" />
+
+
+</androidx.cardview.widget.CardView>

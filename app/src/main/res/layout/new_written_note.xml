@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/R1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/firstColor">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/primary"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/noteDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="dd/mm/yyyy"
+            android:textColor="@color/lightGrey"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/noteName"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noteDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/cagliostro"
+            android:gravity="center"
+            android:hint="Note name"
+            android:textColor="@color/lightGrey"
+            android:textColorHint="@color/thirdColor" />
+
+
+        <EditText
+            android:id="@+id/noteData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/noteName"
+            android:fontFamily="@font/cagliostro"
+            android:gravity="start"
+            android:hint="Type your note"
+            android:overScrollMode="always"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="45dp"
+            android:textColor="@color/lightGrey"
+            android:textColorHighlight="@color/primary"
+            android:textColorHint="@color/lightGrey"
+            android:textDirection="inherit" />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/editNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="24dp"
+            android:fitsSystemWindows="true"
+            app:fab_addButtonStrokeVisible="true"
+            fab:fab_addButtonColorNormal="@color/firstColor"
+            fab:fab_addButtonColorPressed="@color/black"
+            fab:fab_addButtonPlusIconColor="@color/primary"
+            fab:fab_labelsPosition="right">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/noteColorBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:gravity="center_horizontal"
+                fab:fab_colorNormal="@color/thirdColor"
+                fab:fab_colorPressed="@color/black"
+                fab:fab_icon="@drawable/note_color"
+                fab:fab_stroke_visible="true"
+                fab:useCompatPadding="true" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fontColorBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/thirdColor"
+                fab:fab_colorPressed="@color/black"
+                fab:fab_icon="@drawable/font_color" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/saveNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/thirdColor"
+                fab:fab_colorPressed="@color/black"
+                fab:fab_icon="@drawable/save_note" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/deleteNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/thirdColor"
+                fab:fab_colorPressed="@color/black"
+                fab:fab_icon="@drawable/delete" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+        <com.github.naz013.colorslider.ColorSlider
+            android:id="@+id/noteColor"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone"
+            app:cs_colors="@array/rainbow"
+            app:cs_selector_color="@color/firstColor"
+            app:cs_steps="500" />
+
+        <com.github.naz013.colorslider.ColorSlider
+            android:id="@+id/fontColor"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone"
+            app:cs_colors="@array/rainbow"
+            app:cs_selector_color="@color/thirdColor"
+            app:cs_steps="500" />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
