@@ -18,6 +18,6 @@
 
 ![](Gif/splash.gif) / ![](Gif/signup.gif)
 
-![](Gif/HomeView.gif | width=100px )
+![](Gif/HomeView.gif){:height="50%" width="50%"}
 ![](Gif/update.gif)
 ![](Gif/delete.gif)
