@@ -16,8 +16,8 @@
 
 ## Screenshots for the App
 
-![](Gif/splash.png)
-![](Gif/signup.png)
-![](Gif/HomeView.png)
-![](Gif/update.png)
-![](Gif/delete.png)
+![](Gif/splash.gif)
+![](Gif/signup.gif)
+![](Gif/HomeView.gif)
+![](Gif/update.gif)
+![](Gif/delete.gif)
