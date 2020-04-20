@@ -18,6 +18,6 @@
 
 ![](Gif/splash.gif) / ![](Gif/signup.gif)
 
-![](Gif/HomeView.gif =250*250)
+![](Gif/HomeView.gif =250x250)
 ![](Gif/update.gif)
 ![](Gif/delete.gif)
