@@ -16,8 +16,8 @@
 
 ## Screenshots for the App
 
-![](Gif/splash.gif) / ![](Gif/signup.gif)
-
-![](Gif/HomeView.gif){:height="50%" width="50%"}
+![](Gif/splash.gif|10x20) 
+![](Gif/signup.gif)
+![](Gif/HomeView.gif)
 ![](Gif/update.gif)
 ![](Gif/delete.gif)
