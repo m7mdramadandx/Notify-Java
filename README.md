@@ -16,8 +16,4 @@
 
 ## Screenshots for the App
 
-![](Gif/splash.gif|10x20) 
-![](Gif/signup.gif)
-![](Gif/HomeView.gif)
-![](Gif/update.gif)
-![](Gif/delete.gif)
+<img src="Gif/splash.gif" width=200>
